@@ -10,6 +10,27 @@
   </head>
 
   <body>
+  <header>
+    <div class="top-wrapper">
+      <div class="top-image">
+        <img src="<%= "/top_image/title.jpg" %>">
+      </div>
+      <ul class="top-memu">
+        <li>
+          <%= link_to("Home", "/")%>
+        </li>
+        <li>
+          <%= link_to("カテゴリ", "/about") %>
+        </li>
+        <li>
+          <%= link_to("ニキビ連合とは")%>
+        </li>
+      </ul>
+      <div class="nikibi-image">
+        <img src="<%= "/top_image/background.jpg" %>">
+      </div>
+    </div>
+  </header>
     <%= yield %>
   </body>
 </html>

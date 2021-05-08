@@ -1,0 +1,28 @@
+.top-image{
+  display: flex;
+  justify-content: center;
+}
+
+.top-image img{
+  width: 350px;
+}
+
+.top-memu{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 200px 0px 200px;
+  padding: 40px 40px 40px 90px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.nikibi-image{
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.nikibi-image img{
+  height: 200px
+}
