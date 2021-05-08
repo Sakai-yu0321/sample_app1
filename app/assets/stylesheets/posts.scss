@@ -71,3 +71,50 @@
   margin: 0 auto;
   margin-top: 20px;
 }
+
+/* post-show */
+
+.post-show{
+  display: flex;
+  justify-content: center;
+}
+
+.show-post{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.show-title{
+  background-image: url(/show_image/title_background.jpg);
+  background-size: cover;
+  padding: 40px;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.show-list{
+  width:  110px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.show-content{
+  margin: 20px 200px 0px 200px;
+  border: 1px solid gray;
+}
+
+/* post-edit */
+
+/* 新規投稿ページのhtml.cssを再利用 */
+
+
+
+
+
+
+
+
+

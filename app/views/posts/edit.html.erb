@@ -1,6 +1,6 @@
 <div class="post-new">
-  <img src="<%= "/new_image/post_new.jpg" %>">
-  <%= form_tag("/posts/create") do %>
+  <img src="<%= "/edit_image/edit_title.jpg" %>" class="edit-title">
+  <%= form_tag("/posts/#{@post.id}/update") do %>
     <div class="new-post">
       <% @post.errors.full_messages.each do |message| %>
         <div class="post-error">
