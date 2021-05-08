@@ -1,0 +1,15 @@
+<div class="post-new">
+  <img src="<%= "/new_image/post_new.jpg" %>">
+  <%= form_tag("/posts/create") do %>
+    <div class="new-post">
+      <% @post.errors.full_messages.each do |message| %>
+        <div class="post-error">
+          <%= message %>
+        </div>
+      <% end %>
+      <input type="text" value="<%= @post.title %>" placeholder="タイトルを入力してください" name="title" class="new-title">
+      <textarea value="<%= @post.content %>" placeholder="投稿を入力してください" name="content" class="new-content"></textarea>
+      <input type="submit" value="送信" class="submit">
+    </div>
+  <% end %>
+</div>
