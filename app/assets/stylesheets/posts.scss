@@ -1,3 +1,14 @@
+.index-title-container{
+  display: flex;
+  justify-content: center;
+}
+
+.index-title{
+  height: 70px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
 .post-index{
   display: flex;
   flex-wrap: wrap;
@@ -86,12 +97,18 @@
   flex-direction: column;
 }
 
+.show-title-image{
+  height: 70px;
+  margin-top: 20px;
+}
+
 .show-title{
   background-image: url(/show_image/title_background.jpg);
   background-size: cover;
   padding: 40px;
   font-size: 30px;
   margin-top: 30px;
+  border: 1px solid #f2f2f2;
 }
 
 .show-list{
