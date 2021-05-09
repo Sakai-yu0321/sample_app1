@@ -56,3 +56,19 @@
 
 /* posts-destroy_really?のhtml.cssを再利用 */
 
+/* user-show */
+
+.user-show{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.user-show-title{
+  height: 75px;
+}
+
+.user-name{
+  margin-top: 20px;
+}
