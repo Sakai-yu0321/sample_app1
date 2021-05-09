@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   post "users/create" => "users#create"
   get "login" => "users#login_form"
   post "login" => "users#login"
+  get "logout/really" => "users#logout_really?"
+  get "logout" => "users#logout"
   get "users/:id" => "users#show"
 
   post "posts/create" => "posts#create"
@@ -10,7 +12,7 @@ Rails.application.routes.draw do
   get "posts/index" => "posts#index"
   get "posts/:id/edit" => "posts#edit"
   post "posts/:id/update" => "posts#update"
-  get "posts/:id/destroyreally" => "posts#destroy_really?"
+  get "posts/:id/destroy/really" => "posts#destroy_really?"
   post "posts/:id/destroy" => "posts#destroy"
   get "posts/:id" => "posts#show"
 

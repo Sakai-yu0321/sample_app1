@@ -8,7 +8,7 @@
   <%= form_tag("/users/create") do %>
     <div class="signup-form">
       <input type="text" name="name" placeholder="名前を入力してください" value="<%= @user.name %>" class="signup-name">
-      <input type="password" name="password" placeholder="パスワードを入力してください" value="<%= @user.password %>" class="signup-password">
+      <input type="text" name="password" placeholder="パスワードを入力してください" value="<%= @user.password %>" class="signup-password">
       <input type="submit" value="送信" class="signup-submit">
     </div>
   <% end %>
