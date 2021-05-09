@@ -30,11 +30,12 @@
 }
 
 .flash-message{
-  background-color: lightblue;
+  background-color: rgba(173,216,230,0.5);
   color: blue;
   padding: 15px;
   text-align: center;
   margin: 0 200px 0px 200px;
+  border-radius: 0 0 10px 10px;
 }
 
 .about-wrapper h1{
