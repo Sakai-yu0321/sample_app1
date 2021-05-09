@@ -1,0 +1,15 @@
+<div class="post-show">
+  <div class="show-post">
+    <img src="<%= "/show_image/show_title.jpg" %>" class="show-title-image">
+    <div class="show-title">
+      <em><%= @post.title %></em>
+    </div>  
+    <div class="show-list">
+      <%= link_to("編集", "/posts/#{@post.id}/edit") %>
+      <%= link_to("削除", "/posts/#{@post.id}/destroyreally") %>
+    </div>
+    <div class="show-content">
+      <%= @post.content %>
+    </div>
+  </div>
+</div>

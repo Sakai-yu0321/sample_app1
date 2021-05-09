@@ -1,0 +1,18 @@
+<div class="index-title-container">
+  <img src="<%= "/index_image/index_title.jpg" %>" class="index-title">
+</div>
+<div class="post-index">
+  <% @posts.each do |post| %>
+    <div class="post-container">
+      <%= link_to("/posts/#{post.id}") do %>
+        <img src="<%= "/top_image/nikibikun.jpg" %>" class="nikibikun-image">
+      <% end %>
+      <div class="post-title">
+        <b><%= post.title %></b>
+      </div>
+      <div class="post-content">
+        <%= post.content %>
+      </div>
+    </div>
+  <% end %>
+</div>

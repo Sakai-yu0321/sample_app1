@@ -20,14 +20,20 @@
           <%= link_to("Home", "/")%>
         </li>
         <li>
-          <%= link_to("投稿一覧", "") %>
+          <%= link_to("投稿一覧", "/posts/index") %>
         </li>
         <li>
-          <%= link_to("ニキビ連合とは", "/about")%>
+          <%= link_to("ニキビ連合軍とは", "/about")%>
         </li>
+          <%= link_to("新規投稿", "/posts/new")%>
         </li>
       </ul>
     </div>
+    <% if flash[:notice] %>
+      <div class="flash-message">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
   </header>
     <%= yield %>
   </body>
