@@ -1,6 +1,14 @@
 <div class="user-show">
   <img src="<%= "/user_images/mypage.jpg" %>" class="user-show-title">
   <div class="user-name">
-    <%= @user.name %>
+    <p><em><%= @user.name %>のページ</em></p>
+  </div>
+  <div class="deleting_as_user_edit">
+    <div class="user_edit">
+      <%= link_to("編集", "/users/#{@user.id}/edit") %>
+    </div>
+    <div class="user_deletion">
+      <%= link_to("削除", "/users/destoroy/really") %>
+    </div>
   </div>
 </div>

@@ -5,6 +5,10 @@ Rails.application.routes.draw do
   post "login" => "users#login"
   get "logout/really" => "users#logout_really?"
   get "logout" => "users#logout"
+  get "users/:id/edit" => "users#edit"
+  post "users/:id/update" => "users#update"
+  get "users/destroy/really" => "users#deleted_also_good?"
+  post "users/:id/destroy" => "users#destroy"
   get "users/:id" => "users#show"
 
   post "posts/create" => "posts#create"

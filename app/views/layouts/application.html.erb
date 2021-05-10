@@ -48,7 +48,7 @@
     <% end %>
     <div class="login_information">
       <% if @current_user %>
-        <P class="current_user_name">現在ログイン中のユーザー: <%= @current_user.name %></p>
+        <P class="current_user_name">現在ログイン中のユーザー:  <%= @current_user.name %></p>
         <div class="link_to_my_page">
           <%= link_to("マイページ", "/users/#{@current_user.id}") %>
         </div>

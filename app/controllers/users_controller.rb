@@ -41,4 +41,26 @@ class UsersController < ApplicationController
     flash[:notice] = "ログアウトしました"
     redirect_to("/posts/index")
   end
+
+  def edit
+    @user = User.find_by(id: params[:id])
+  end
+
+  def update
+    @user = User.find_by(id: params[:id])
+    @user.name = params[:name]
+    @user.password = params[:password]
+    if @user.save
+      flash[:notice] = "編集が完了しました"
+      redirect_to("users/#{@user.id}")
+    else
+      render("users/edit")
+    end
+  end
+
+  def deleted_also_good?
+  end
+
+  def destroy
+  end
 end
