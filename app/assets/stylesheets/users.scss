@@ -1,0 +1,82 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.user-signup{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.signup-title{
+  height: 75px;
+  margin-top: 30px;
+}
+
+.signup-error{
+  color: red;
+  font-size: 15px;
+}
+
+.signup-form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  border: 1px solid gray;
+  padding: 20px;
+}
+
+.signup-name{
+  border: 1px solid gray;
+  padding-right: 300px;
+}
+
+.signup-password{
+  border: 1px solid gray;
+  margin-top: 20px;
+}
+
+.signup-submit{
+  color: gray;
+  border: 1px solid gray;
+  background-color: #f2f2f2;
+  margin: 20px 100px 0 100px;
+}
+
+/* users-login */
+
+/* users-newのhtml.cssを再利用 */
+
+.login-error{
+  color: red;
+  font-size: 15px;
+}
+
+/* user-logout_really? */
+
+/* posts-destroy_really?のhtml.cssを再利用 */
+
+/* user-show */
+
+.user-show{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.user-show-title{
+  height: 75px;
+}
+
+.user-name{
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.deleting_as_user_edit{
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}

@@ -1,10 +1,22 @@
 Rails.application.routes.draw do
+  get "signup" => "users#new"
+  post "users/create" => "users#create"
+  get "login" => "users#login_form"
+  post "login" => "users#login"
+  get "logout/really" => "users#logout_really?"
+  get "logout" => "users#logout"
+  get "users/:id/edit" => "users#edit"
+  post "users/:id/update" => "users#update"
+  get "users/destroy/really" => "users#deleted_also_good?"
+  post "users/:id/destroy" => "users#destroy"
+  get "users/:id" => "users#show"
+
   post "posts/create" => "posts#create"
   get "posts/new" => "posts#new"
   get "posts/index" => "posts#index"
   get "posts/:id/edit" => "posts#edit"
   post "posts/:id/update" => "posts#update"
-  get "posts/:id/destroyreally" => "posts#destroy_really?"
+  get "posts/:id/destroy/really" => "posts#destroy_really?"
   post "posts/:id/destroy" => "posts#destroy"
   get "posts/:id" => "posts#show"
 

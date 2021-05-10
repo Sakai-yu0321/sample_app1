@@ -5,7 +5,7 @@
 
 .top-image img{
   width: 350px;
-  margin-top: 80px;
+  margin-top: 60px;
   margin-bottom: 10px;
 }
 
@@ -38,12 +38,22 @@
   border-radius: 0 0 10px 10px;
 }
 
+.login_information{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 200px;
+}
+
+.current_user_name{
+  margin-right: 20px;
+  margin-top: 1px;
+}
+
 .about-wrapper h1{
   margin-top: 60px;
   text-align: center;
   font-size: 30px;
 }
-
 
 .about-item{
   margin-right: 100px;
