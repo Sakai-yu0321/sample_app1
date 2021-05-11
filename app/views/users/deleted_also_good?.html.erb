@@ -1,0 +1,12 @@
+<div class="destroy-really">
+  <h1>アカウントを本当に削除しますか？</h1>
+  <div class="destroy-choices">
+    <div class="destroy-go">
+      <%= link_to("はい", "/users/#{@user.id}/destroy", {method: :post}) %>
+    </div>
+    <div class="destoroy-none">
+      <%= link_to("いいえ", "/users/#{@user.id}") %>
+    </div>
+  </div>
+  <img src="<%= "/top_image/nikibikun.JPG" %>">
+</div>
